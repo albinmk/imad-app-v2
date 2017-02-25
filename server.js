@@ -33,16 +33,12 @@ var htmlTemplate = `<html>
         
         <title>
             
-            {$title}
+            ${title}
         </title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1" />
          <link href="/ui/style.css" rel="stylesheet" />
         
-        <style>
-           
-            
-        </style>
     </head>
 
 <body>
@@ -55,31 +51,18 @@ var htmlTemplate = `<html>
     <hr/>
     
     <h3>
-        {$heading}
+        ${heading}
         
     </h3>
     
     <div>
-        feb 22
+       ${date}
         
     </div>
     
     <div>
     
-    <p>
-        First Paragraph.
-        
-    </p>
-    
-     <p>
-       2nd Paragraph.
-        
-    </p>
-    
-     <p>
-        3rd Paragraph.
-        
-    </p>
+    ${content}
     
     </div>
 </div>
