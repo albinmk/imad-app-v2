@@ -1,6 +1,6 @@
 console.log('Loaded!');
 //change value.
-var element = document.getElementById('main-text');
+/*var element = document.getElementById('main-text');
 
 element.innerHTML = 'newtext';
 var img = document.getElementById('madi');
@@ -14,4 +14,4 @@ marginLeft = marginLeft + 5;
 img.onclick = function() {
     
  var interval = setInterval(moveRight, 50);
-};
+};*/
