@@ -135,7 +135,7 @@ var names = [];
 app.get('/submit-name/:name', function (req, res) {// submit-name?name=xxxx
  //get the name from the request
  
- var name = req.params.name;//'params' is replaced by 'query'
+ var name = req.query.name;//'params' is replaced by 'query'
  
  names.push(name);
  
