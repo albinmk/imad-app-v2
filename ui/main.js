@@ -20,7 +20,7 @@ img.onclick = function() {
 //counter code
 
 var button = document.getElementById("counter");
-var counter= 0;
+//var counter= 0;
  
 button.onclick = function() {
     
@@ -30,29 +30,37 @@ button.onclick = function() {
     //capture the response and store it in a varable.
     
     request.onreadystatechange = function () {
+        if(request.readyState === XMLHttpRequest.DONE)
+        //take some action
+        {
+          if(request.status === 200)
+          {
+              var counter = request.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();
+          }
+            
+            
+        }
+        //not yet done.
         
-        
-        
-    };
+                                              };
     
-    //render the variable in the correct span.
     
+    httpRequest.OPEN('GET', 'http://albinmk.imad.hasura-app.io/counter', true);
+    httpRequest.SEND(null);
   
-
-
-httpRequest.onreadystatechange = function(){
     // process the server response
-};
+                           };
 
-httpRequest.open('GET', 'http://www.example.org/some.file', true);
-httpRequest.send(null);
+
     
     
     //counter = counter + 1;
     
-    var span= document.getElementById("count");
+    //var span= document.getElementById("count");
     
-    span.innerHTML=counter.toString();
+    //span.innerHTML=counter.toString();
 };
 
 
