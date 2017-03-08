@@ -42,19 +42,14 @@ button.onclick = function() {
             
             
         }
-        //not yet done.
-        
-                                              };
-    
-    
-    httpRequest.OPEN('GET', 'http://albinmk.imad.hasura-app.io/counter', true);
-    httpRequest.SEND(null);
+        //not yet done
   
     // process the server response
                            };
 
 
-    
+    httpRequest.OPEN('GET', 'http://albinmk.imad.hasura-app.io/counter', true);
+    httpRequest.SEND(null);
     
     //counter = counter + 1;
     
