@@ -30,7 +30,7 @@ button.onclick = function() {
     
     //render the variable in the correct span.
     
-    counter = counter+1;
+    counter = counter + 1;
     
     var span= document.getElementById("count");
     
