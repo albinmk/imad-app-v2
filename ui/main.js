@@ -90,17 +90,19 @@ submit.onclick = function () {
             
            var ul = document.getElementById('namelist');
            ul.innerHTML = list; 
-        }
+           }
         //not yet done
   
     // process the server response
-        }
+       }
     
     
     
         
-    }
+    };
     
+     request.open('GET', 'http://albinmk.imad.hasura-app.io/submit-name?name=' + name, true);
+    request.send(null);
     
 };
 
