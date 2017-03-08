@@ -48,8 +48,8 @@ button.onclick = function() {
                            };
 
 
-    httpRequest.OPEN('GET', 'http://albinmk.imad.hasura-app.io/counter', true);
-    httpRequest.SEND(null);
+    httpRequest.open('GET', 'http://albinmk.imad.hasura-app.io/counter', true);
+    httpRequest.send(null);
     
     //counter = counter + 1;
     
