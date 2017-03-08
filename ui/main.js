@@ -72,7 +72,7 @@ submit.onclick = function () {
     
     //capture a list of names ad render it as a list
     
-    var names = ["name1","name2","name3","name4"];
+    var names = ['name1','name2','name3','name4'];
      
     var list=''; 
 
