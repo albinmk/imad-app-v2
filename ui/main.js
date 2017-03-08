@@ -60,9 +60,7 @@ button.onclick = function() {
 
 //Submit name
 
-var nameInput = document.getElementById('name');
 
-var name = nameInput.value;
 
 var submit = document.getElementById('submit_btn');
 
@@ -101,7 +99,11 @@ submit.onclick = function () {
         
     };
     
-     request.open('GET', 'http://albinmk.imad.hasura-app.io/submit-name?name=' + name, true);
+    var nameInput = document.getElementById('name');
+
+    var name = nameInput.value;
+    
+    request.open('GET', 'http://albinmk.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
     
 };
