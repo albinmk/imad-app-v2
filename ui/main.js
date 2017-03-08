@@ -80,7 +80,7 @@ submit.onclick = function () {
           {
             //capture a list of names and render it as a list.
              var names = request.responseText;//['name1','name2','name3','name4'];
-     
+            names = JSON.parse(names);
             var list=''; 
 
           for(var i=0;i<names.length;i++) {
