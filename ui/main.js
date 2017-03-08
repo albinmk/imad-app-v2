@@ -26,11 +26,29 @@ button.onclick = function() {
     
     //make a request to counter end point
 
+    var request = new XMLHttpRequest();
     //capture the response and store it in a varable.
+    
+    request.onreadystatechange = function () {
+        
+        
+        
+    };
     
     //render the variable in the correct span.
     
-    counter = counter + 1;
+  
+
+
+httpRequest.onreadystatechange = function(){
+    // process the server response
+};
+
+httpRequest.open('GET', 'http://www.example.org/some.file', true);
+httpRequest.send(null);
+    
+    
+    //counter = counter + 1;
     
     var span= document.getElementById("count");
     
