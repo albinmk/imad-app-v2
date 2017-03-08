@@ -70,7 +70,26 @@ submit.onclick = function () {
     
     //make a request to the server and send the name
     
+    var request = new XMLHttpRequest();
     //capture a list of names ad render it as a list
+     request.onreadystatechange = function () {
+        if(request.readyState === XMLHttpRequest.DONE)
+        //take some action
+        {
+          if(request.status === 200)
+          {
+              var counter = request.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();
+          }
+            
+            
+        }
+        //not yet done
+  
+    // process the server response
+                           };
+    
     
     var names = ['name1','name2','name3','name4'];
      
